@@ -1,0 +1,80 @@
+.content{
+    justify-content: center;
+}
+
+.setting-wrapper{
+    width: 68%;
+    box-sizing: border-box;
+}
+
+.info-change, .password-change{
+    width:100%;
+    margin-bottom: 1em;
+}
+
+#info input:first-of-type, #password input{
+    border:1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5em;
+    background-color: #fff;
+    width: 80%;
+    font-size: 1.5em;
+    display: block;
+}
+
+#preview-avatar{
+    position: relative;
+    width: 20%;
+    /*border: 1px solid #000;*/
+    border-radius: 50%;
+    overflow: hidden;
+    margin:0 auto 1em;
+    box-sizing: border-box;
+}
+#preview-avatar:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+#preview-avatar img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /*line-height:100%;*/
+    height:100%;
+    width: 100%;
+    /*text-align: center;*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    object-fit: cover;
+}
+
+#info input, #password input{
+    margin: 1em auto;
+}
+
+/*#info,#password{*/
+/*    width:100%;*/
+/*}*/
+
+#passBtn, #infoBtn, #logout{
+    outline:none;
+    border:none;
+    font-family: Microsoft Yahei;
+    color:#fff;
+    border-radius: 3px;
+    padding: 1em;
+    width: 50%;
+    background-color: rgba(0,0,225,0.7);
+    display: block;
+    margin:0 auto;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#logout{
+    background-color:rgba(225,0,0,0.8);
+}
